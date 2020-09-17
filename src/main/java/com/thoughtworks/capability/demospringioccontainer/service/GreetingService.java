@@ -1,5 +1,7 @@
-package com.thoughtworks.capability.demospringioccontainer;
+package com.thoughtworks.capability.demospringioccontainer.service;
 
+import com.thoughtworks.capability.demospringioccontainer.domain.Bar;
+import com.thoughtworks.capability.demospringioccontainer.domain.Foo;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -13,7 +15,7 @@ public class GreetingService {
         this.bar = bar;
     }
 
-    String sayHi() {
+    public String sayHi() {
         foo.hi();
         bar.hi();
         return "hello world";

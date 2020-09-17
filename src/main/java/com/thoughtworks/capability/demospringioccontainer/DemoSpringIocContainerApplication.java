@@ -1,5 +1,6 @@
 package com.thoughtworks.capability.demospringioccontainer;
 
+import com.thoughtworks.capability.demospringioccontainer.service.GreetingService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;

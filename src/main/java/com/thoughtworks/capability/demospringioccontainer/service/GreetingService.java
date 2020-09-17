@@ -8,7 +8,6 @@ import static org.springframework.beans.factory.config.ConfigurableBeanFactory.S
 import static org.springframework.beans.factory.config.ConfigurableBeanFactory.SCOPE_SINGLETON;
 
 @Service
-//@Scope(value = SCOPE_SINGLETON,proxyMode = ScopedProxyMode.TARGET_CLASS)
 @Scope(value = SCOPE_PROTOTYPE,proxyMode = ScopedProxyMode.TARGET_CLASS)
 public class GreetingService {
    public GreetingService(){

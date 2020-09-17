@@ -16,7 +16,7 @@ public class GreetingController {
     private final GreetingService greetingService;
 
     @Autowired
-    public GreetingController(GreetingService greetingService) {
+    public GreetingController(@Lazy GreetingService greetingService) {
         this.greetingService = greetingService;
         System.out.println("**********************");
     }

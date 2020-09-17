@@ -9,9 +9,8 @@ import org.springframework.stereotype.Component;
 public class Foo {
 
     private Bar bar;
-
-    @Autowired
-    public void setFoo(@Lazy Bar bar) {
+    
+    public void setFoo( Bar bar) {
         this.bar = bar;
     }
 
